@@ -1,6 +1,6 @@
 /**
 * CSS file to hold styles that apply across the application
-*/
+*/ 
 
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Montserrat:wght@200;400;600;800&display=swap");
 
@@ -119,7 +119,19 @@ a:hover {
   text-align: center;
 }
 
+
 img.socialIcon {
+  animation: socialIcon 1s ease-in-out infinite alternate;
   height: 30px;
   width: 30px;
+}
+
+/* add an amazing animation to the social icons */
+@keyframes socialIcon {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
 }
